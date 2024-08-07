@@ -1,0 +1,16 @@
+2024-08-06 21:28:58 | INFO     | log_config:test_logging:49 - 这是一条信息。
+2024-08-06 21:28:58 | WARNING  | log_config:test_logging:50 - 这是一条警告。
+2024-08-06 21:28:58 | ERROR    | log_config:test_logging:51 - 这是一条错误信息。
+2024-08-06 21:28:58 | CRITICAL | log_config:test_logging:52 - 这是一条严重错误信息。
+2024-08-06 21:29:20 | INFO     | log_config:test_logging:50 - 这是一条信息。
+2024-08-06 21:29:20 | WARNING  | log_config:test_logging:51 - 这是一条警告。
+2024-08-06 21:29:20 | ERROR    | log_config:test_logging:52 - 这是一条错误信息。
+2024-08-06 21:29:20 | CRITICAL | log_config:test_logging:53 - 这是一条严重错误信息。
+2024-08-06 21:30:34 | INFO     | __main__:logging:50 - 这是一条信息。
+2024-08-06 21:30:34 | WARNING  | __main__:logging:51 - 这是一条警告。
+2024-08-06 21:30:34 | ERROR    | __main__:logging:52 - 这是一条错误信息。
+2024-08-06 21:30:34 | CRITICAL | __main__:logging:53 - 这是一条严重错误信息。
+2024-08-06 21:31:19 | INFO     | log_config:test_logging:50 - 这是一条信息。
+2024-08-06 21:31:19 | WARNING  | log_config:test_logging:51 - 这是一条警告。
+2024-08-06 21:31:19 | ERROR    | log_config:test_logging:52 - 这是一条错误信息。
+2024-08-06 21:31:19 | CRITICAL | log_config:test_logging:53 - 这是一条严重错误信息。

@@ -1,0 +1,78 @@
+2024-08-07 11:35:06 | INFO     | log_config:test_logging:50 - 这是一条信息。
+2024-08-07 11:35:06 | WARNING  | log_config:test_logging:51 - 这是一条警告。
+2024-08-07 11:35:06 | ERROR    | log_config:test_logging:52 - 这是一条错误信息。
+2024-08-07 11:35:06 | CRITICAL | log_config:test_logging:53 - 这是一条严重错误信息。
+2024-08-07 11:41:27 | INFO     | server:search:34 - 用户输入的文本：测试查询
+2024-08-07 11:42:12 | INFO     | server:search:34 - 用户输入的文本：测试查询
+2024-08-07 11:44:34 | INFO     | config.log_config:test_logging:50 - 这是一条信息。
+2024-08-07 11:44:34 | WARNING  | config.log_config:test_logging:51 - 这是一条警告。
+2024-08-07 11:44:34 | ERROR    | config.log_config:test_logging:52 - 这是一条错误信息。
+2024-08-07 11:44:34 | CRITICAL | config.log_config:test_logging:53 - 这是一条严重错误信息。
+2024-08-07 11:44:34 | INFO     | server:search:34 - 用户输入的文本：测试查询
+2024-08-07 11:47:46 | INFO     | config.log_config:test_logging:50 - 这是一条信息。
+2024-08-07 11:47:46 | WARNING  | config.log_config:test_logging:51 - 这是一条警告。
+2024-08-07 11:47:46 | ERROR    | config.log_config:test_logging:52 - 这是一条错误信息。
+2024-08-07 11:47:46 | CRITICAL | config.log_config:test_logging:53 - 这是一条严重错误信息。
+2024-08-07 11:47:46 | INFO     | server:search:34 - 用户输入的文本：测试查询
+2024-08-07 11:48:45 | INFO     | server:search:34 - 用户输入的文本：测试查询
+2024-08-07 11:48:45 | ERROR    | server:search:40 - 发生异常：模拟服务器错误
+Traceback (most recent call last):
+
+  File "D:\anaconda\envs\faq_chatbot\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001B617CC30A0>
+    └ <WorkerThread(AnyIO worker thread, started 20672)>
+
+  File "D:\anaconda\envs\faq_chatbot\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x000001B63CB6AB90>
+    └ <WorkerThread(AnyIO worker thread, started 20672)>
+
+  File "D:\anaconda\envs\faq_chatbot\lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function search at 0x000001B63CB1F1C0>, query_data=QueryData(text='测试查询'))
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x000001B63C561380>
+
+> File "D:\Projects\FAQ_Chatbot\server.py", line 36, in search
+    query_vec = get_embedding(query_data.text)
+                │             │          └ '测试查询'
+                │             └ QueryData(text='测试查询')
+                └ <function test_search_endpoint_server_error.<locals>.mock_get_embedding at 0x000001B61A018940>
+
+  File "D:\Projects\FAQ_Chatbot\unit_test\test_server.py", line 34, in mock_get_embedding
+    raise Exception("模拟服务器错误")
+
+Exception: 模拟服务器错误
+2024-08-07 11:48:54 | INFO     | server:search:34 - 用户输入的文本：测试查询
+2024-08-07 11:48:54 | ERROR    | server:search:40 - 发生异常：模拟服务器错误
+Traceback (most recent call last):
+
+  File "D:\anaconda\envs\faq_chatbot\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000285A20130A0>
+    └ <WorkerThread(AnyIO worker thread, started 37408)>
+
+  File "D:\anaconda\envs\faq_chatbot\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x00000285C6F6AB90>
+    └ <WorkerThread(AnyIO worker thread, started 37408)>
+
+  File "D:\anaconda\envs\faq_chatbot\lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function search at 0x00000285C6F1B250>, query_data=QueryData(text='测试查询'))
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x00000285C6F6FFC0>
+
+> File "D:\Projects\FAQ_Chatbot\server.py", line 36, in search
+    query_vec = get_embedding(query_data.text)
+                │             │          └ '测试查询'
+                │             └ QueryData(text='测试查询')
+                └ <function test_search_endpoint_server_error.<locals>.mock_get_embedding at 0x00000285A4368940>
+
+  File "D:\Projects\FAQ_Chatbot\unit_test\test_server.py", line 34, in mock_get_embedding
+    raise Exception("模拟服务器错误")
+
+Exception: 模拟服务器错误
