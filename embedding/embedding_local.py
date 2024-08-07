@@ -16,13 +16,14 @@ import warnings
 # 消除警告信息
 warnings.filterwarnings("ignore", category=UserWarning, message="TypedStorage is deprecated")
 
+param = ParameterConfig()
+tokenizer = AutoTokenizer.from_pretrained(param.embedding_model, trust_remote_code=True)
+model = AutoModel.from_pretrained(param.embedding_model, trust_remote_code=True).half().cuda()
+model = model.to(param.device)
+model.eval()
+
 
 def compute_embedding(text: str):
-    _param = ParameterConfig()
-    tokenizer = AutoTokenizer.from_pretrained(_param.embedding_model, trust_remote_code=True)
-    model = AutoModel.from_pretrained(_param.embedding_model, trust_remote_code=True).half().cuda()
-    model = model.to(_param.device)
-    model.eval()
     try:
         encoded_input = tokenizer(
             text,
@@ -30,7 +31,7 @@ def compute_embedding(text: str):
             truncation=True,
             return_tensors="pt",
             max_length=512
-        ).to(_param.device)
+        ).to(param.device)
 
         with torch.no_grad():
             outputs = model(**encoded_input)
