@@ -11,11 +11,21 @@ import json
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from starlette.middleware.cors import CORSMiddleware
+
 from config.log_config import *
 from embedding.embedding_local import *
 
 # 创建FastAPI实例
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允许所有源，在生产环境中应该更具体
+    allow_credentials=True,
+    allow_methods=["*"],  # 允许所有方法
+    allow_headers=["*"],  # 允许所有头
+)
 
 
 # 构建一个数据模型类
@@ -35,17 +45,13 @@ def search(query_data: QueryData):
         # 计算query的向量表示
         query_vec = get_embedding(query_data.text)
         return {"query_vec": query_vec}
-        # 基于BM25和密集检索进行召回
-        # results = ESRecall.recall__by_bm25_dr(
-        #     query_data.text,
-        #     query_vec,
-        #     topN=TOP_N
-        # )
 
     except Exception as e:
         logger.exception(f"发生异常：{e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
+
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=8008)
+

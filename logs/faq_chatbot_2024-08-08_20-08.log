@@ -1,0 +1,38 @@
+2024-08-08 20:28:53 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:29:29 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:30:59 | ERROR    | __main__:create_index:53 - 发生位置错误：NotFoundError(404, 'index_not_found_exception', 'no such index [medical_es_db_v_01]', medical_es_db_v_01, index_or_alias)
+2024-08-08 20:31:47 | ERROR    | __main__:create_index:53 - 发生未知错误：NotFoundError(404, 'index_not_found_exception', 'no such index [medical_es_db_v_01]', medical_es_db_v_01, index_or_alias)
+2024-08-08 20:32:05 | ERROR    | __main__:create_index:53 - 删除索引时发生错误：NotFoundError(404, 'index_not_found_exception', 'no such index [medical_es_db_v_01]', medical_es_db_v_01, index_or_alias)
+2024-08-08 20:32:49 | ERROR    | __main__:create_index:53 - 删除索引时发生错误：NotFoundError(404, 'index_not_found_exception', 'no such index [medical_es_db_v_01]', medical_es_db_v_01, index_or_alias)
+2024-08-08 20:33:13 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:34:32 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:34:32 | INFO     | __main__:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:35:00 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:35:00 | INFO     | __main__:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:39:09 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:39:09 | INFO     | vectorstore.es_index_analysis:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:39:09 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:39:09 | ERROR    | vectorstore.es_index_analysis:create_index:60 - 创建失败，该索引已存在！错误信息：索引创建失败
+2024-08-08 20:40:00 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:40:00 | INFO     | vectorstore.es_index_analysis:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:40:00 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:40:00 | ERROR    | vectorstore.es_index_analysis:create_index:60 - 创建失败，该索引已存在！错误信息：索引创建失败
+2024-08-08 20:41:33 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:41:33 | INFO     | vectorstore.es_index_analysis:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:41:33 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:41:33 | ERROR    | vectorstore.es_index_analysis:create_index:60 - 创建失败，该索引已存在！错误信息：索引创建失败
+2024-08-08 20:41:33 | ERROR    | vectorstore.es_index_analysis:create_index:53 - 删除索引时发生错误：删除索引失败
+2024-08-08 20:41:33 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:41:33 | INFO     | vectorstore.es_index_analysis:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:41:33 | ERROR    | vectorstore.es_index_analysis:create_index:60 - 创建失败，该索引已存在！错误信息：索引已存在
+2024-08-08 20:41:33 | INFO     | vectorstore.es_index_analysis:create_index:58 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:42:16 | INFO     | vectorstore.es_index_analysis:create_index:59 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:42:16 | INFO     | vectorstore.es_index_analysis:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:42:16 | INFO     | vectorstore.es_index_analysis:create_index:59 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:42:16 | ERROR    | vectorstore.es_index_analysis:create_index:61 - 创建失败，该索引已存在！错误信息：索引创建失败
+2024-08-08 20:42:16 | ERROR    | vectorstore.es_index_analysis:create_index:53 - 删除索引时发生错误：删除索引失败
+2024-08-08 20:42:16 | INFO     | vectorstore.es_index_analysis:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:42:16 | ERROR    | vectorstore.es_index_analysis:create_index:61 - 创建失败，该索引已存在！错误信息：索引已存在
+2024-08-08 20:42:16 | INFO     | vectorstore.es_index_analysis:create_index:59 - 索引medical_es_db_v_01创建成功！
+2024-08-08 20:42:43 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 20:42:43 | INFO     | __main__:create_index:59 - 索引medical_es_db_v_01创建成功！

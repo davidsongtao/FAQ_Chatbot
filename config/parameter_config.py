@@ -16,4 +16,7 @@ class ParameterConfig:
         self.device = "cuda:0" if torch.cuda.is_available() else "cpu"
         self.embedding_model = r"D:\Projects\FAQ_Chatbot\models\bge-large-zh-v1.5"
         self.top_n: int = 3
-        self.es_url = "http://172.18.0.2:9200"
+        self.es_url = "http://localhost:9200"
+        self.es_index_name = "medical_es_db_v_01"
+        self.data_file_path = r"D:\Projects\FAQ_Chatbot\data\samples.jsonl"
+        self.es_index_batch_size = 10

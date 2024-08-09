@@ -1,0 +1,10 @@
+2024-08-08 16:50:30 | INFO     | vectorstore.es_index:create_index:56 - -----索引medical_es_db_v_01创建成功！-----
+2024-08-08 16:50:30 | INFO     | vectorstore.es_index:create_index:49 - -----删除索引响应：{'acknowledged': True}-----
+2024-08-08 16:50:30 | INFO     | vectorstore.es_index:create_index:56 - -----索引medical_es_db_v_01创建成功！-----
+2024-08-08 16:50:30 | INFO     | vectorstore.es_index:create_index:49 - -----删除索引响应：{'acknowledged': False}-----
+2024-08-08 16:50:30 | ERROR    | vectorstore.es_index:create_index:51 - -----索引删除未被确认，请检查问题原因-----
+2024-08-08 16:55:30 | INFO     | vectorstore.es_index:create_index:56 - -----索引medical_es_db_v_01创建成功！-----
+2024-08-08 16:55:30 | INFO     | vectorstore.es_index:create_index:49 - -----删除索引响应：{'acknowledged': True}-----
+2024-08-08 16:55:30 | INFO     | vectorstore.es_index:create_index:56 - -----索引medical_es_db_v_01创建成功！-----
+2024-08-08 16:55:30 | INFO     | vectorstore.es_index:create_index:49 - -----删除索引响应：{'acknowledged': False}-----
+2024-08-08 16:55:30 | ERROR    | vectorstore.es_index:create_index:51 - -----索引删除未被确认，请检查问题原因-----

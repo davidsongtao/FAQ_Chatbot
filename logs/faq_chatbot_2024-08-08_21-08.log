@@ -1,0 +1,13 @@
+2024-08-08 21:09:48 | INFO     | __main__:create_index:49 - 索引medical_es_db_v_01已删除！
+2024-08-08 21:09:48 | INFO     | __main__:create_index:59 - 索引medical_es_db_v_01创建成功！
+2024-08-08 21:11:21 | INFO     | __main__:create_index:50 - 索引medical_es_db_v_01已删除！
+2024-08-08 21:11:29 | INFO     | __main__:create_index:61 - 索引medical_es_db_v_01创建成功！
+2024-08-08 21:11:39 | INFO     | __main__:create_index:50 - 索引medical_es_db_v_01已删除！
+2024-08-08 21:20:37 | INFO     | __main__:create_index:66 - 索引medical_es_db_v_01创建成功！
+2024-08-08 21:20:47 | INFO     | __main__:create_index:52 - 索引medical_es_db_v_01已删除！
+2024-08-08 21:20:47 | INFO     | __main__:create_index:66 - 索引medical_es_db_v_01创建成功！
+2024-08-08 21:21:04 | INFO     | __main__:create_index:59 - 用户已取消索引 medical_es_db_v_01 的删除操作。
+2024-08-08 21:21:43 | INFO     | __main__:create_index:59 - 用户已取消索引 medical_es_db_v_01 的删除操作。
+2024-08-08 21:22:21 | INFO     | __main__:create_index:59 - 用户已取消索引 medical_es_db_v_01 的删除操作。
+2024-08-08 21:22:40 | INFO     | __main__:create_index:52 - 索引medical_es_db_v_01已删除！
+2024-08-08 21:22:40 | INFO     | __main__:create_index:66 - 索引medical_es_db_v_01创建成功！
